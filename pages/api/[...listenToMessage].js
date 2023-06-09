@@ -4,7 +4,7 @@ export default async function handler(req, res) {
 
 
     const url =
-        "mongodb+srv://testDb:1234@cluster0.zcag5mi.mongodb.net/?retryWrites=true&w=majority";
+       "mongodb+srv://vercel-admin-user:S6HfWvXrLN3R4Dw8@cluster0.zcag5mi.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
     const client = new MongoClient(url);
     await client.connect();
     // MongoDB 연결

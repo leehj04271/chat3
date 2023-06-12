@@ -37,10 +37,10 @@ export default async function handler(req, res) {
 
 
             res.writeHead(200, {
-                "Content-Type": "text/event-stream",
-                "Cache-Control": "no-cache",
+              "Content-Type": "text/event-stream",
                 Connection: "keep-alive",
-                'X-Accel-Buffering': 'no'
+                "Cache-Control": "no-cache",
+                "X-Accel-Buffering": "no",
             });
             // Print change events
             for await (const change of changeStream) {
